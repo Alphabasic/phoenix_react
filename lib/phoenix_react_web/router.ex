@@ -18,6 +18,7 @@ defmodule PhoenixReactWeb.Router do
 
     get "/", PageController, :index
     get "/helloWorld", HelloController, :index
+    get "/helloWorld/:messenger", HelloController, :show
   end
 
   # Other scopes may use custom stacks.
